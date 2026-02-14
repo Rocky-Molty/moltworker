@@ -30,8 +30,14 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           secrets: |
-            ANTHROPIC_API_KEY
-            MOLTBOT_GATEWAY_TOKEN
+          CLOUDFLARE_AI_GATEWAY_API_KEY
+          CF_AI_GATEWAY_ACCOUNT_ID
+          CF_AI_GATEWAY_GATEWAY_ID
+          CF_AI_GATEWAY_MODEL
+          MOLTBOT_GATEWAY_TOKEN
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLOUDFLARE_AI_GATEWAY_API_KEY: ${{ secrets.CLOUDFLARE_AI_GATEWAY_API_KEY }}
+          CF_AI_GATEWAY_ACCOUNT_ID: ${{ secrets.CF_AI_GATEWAY_ACCOUNT_ID }}
+          CF_AI_GATEWAY_GATEWAY_ID: ${{ secrets.CF_AI_GATEWAY_GATEWAY_ID }}
+          CF_AI_GATEWAY_MODEL: ${{ secrets.CF_AI_GATEWAY_MODEL }}
           MOLTBOT_GATEWAY_TOKEN: ${{ secrets.MOLTBOT_GATEWAY_TOKEN }}
